@@ -258,7 +258,7 @@
         <p class="section-sub">Schreiben Sie uns – wir melden uns innerhalb von 24 Stunden.</p>
       </div>
       <div class="contact-wrapper reveal">
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/https://formspree.io/f/mzdqvwny" method="POST">
           <div class="form-row">
             <div class="form-group">
               <label for="name">Name</label>
@@ -286,6 +286,8 @@
             <label for="message">Nachricht</label>
             <textarea id="message" rows="5" placeholder="Erzählen Sie uns von Ihrem Projekt..."></textarea>
           </div>
+          <input type="hidden" name="_subject" value="Neue Anfrage über vggruppe.de" />
+          <input type="hidden" name="_language" value="de" />
           <button type="submit" class="btn-primary btn-submit">Nachricht senden →</button>
         </form>
         <div class="contact-info">
