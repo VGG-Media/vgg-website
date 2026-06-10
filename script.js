@@ -43,17 +43,7 @@ document.querySelectorAll('.value-item').forEach((el, i) => {
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 // ---- Contact form ----
-document.getElementById('contactForm').addEventListener('submit', (e) => {
-  e.preventDefault();
-  const btn = e.target.querySelector('.btn-submit');
-  btn.textContent = 'Nachricht gesendet ✓';
-  btn.style.background = '#36B39C';
-  setTimeout(() => {
-    btn.textContent = 'Nachricht senden →';
-    btn.style.background = '';
-    e.target.reset();
-  }, 3000);
-});
+// Form submits natively to Formspree — no preventDefault
 
 // ---- Smooth active nav highlight ----
 const sections = document.querySelectorAll('section[id]');
